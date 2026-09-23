@@ -29,6 +29,8 @@ namespace MohawkGame2D
         {
             //background color (sky)
             Window.ClearBackground(new Color(0, 0, 255 - 255 * Input.GetMouseY() / 400));
+            if(Input.IsKeyboardKeyDown(KeyboardKey.Space))
+            Window.ClearBackground(new Color(0, 0, 255* Input.GetMouseY() / 400));
 
 
 
