@@ -28,8 +28,15 @@ namespace MohawkGame2D
         {
         //background color (sky)
             Window.ClearBackground(Color.Blue);
-        
-            
+
+
+            {
+
+                Draw.FillColor = Color.Yellow;
+                Draw.Circle(Input.GetMouseX(), Input.GetMouseY(), 50);
+            }
+
+
             {
                 //the front hill the sun sets behind
             Draw.FillColor = Color.Green;
@@ -37,9 +44,10 @@ namespace MohawkGame2D
             Draw.LineColor = Color.Green;
             Draw.Circle(new Vector2(200, 650), 400);
             }
-        
-
+            
+            
         }
+
 
     }
 
