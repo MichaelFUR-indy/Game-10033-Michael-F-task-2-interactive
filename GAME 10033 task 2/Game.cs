@@ -2,6 +2,7 @@
 using System;
 using System.Numerics;
 using System.Runtime.InteropServices;
+using static MohawkGame2D.Game;
 
 // The namespace your code is in.
 namespace MohawkGame2D
@@ -38,7 +39,6 @@ namespace MohawkGame2D
                 Draw.Circle(Input.GetMouseX(), Input.GetMouseY(), 50);
             }
 
-
             {
                 //the front hill the sun sets behind
             Draw.FillColor = Color.Green;
@@ -46,9 +46,8 @@ namespace MohawkGame2D
             Draw.LineColor = Color.Green;
             Draw.Circle(new Vector2(200, 650), 400);
             }
-            
-            
-        }
+
+         }
 
 
     }
