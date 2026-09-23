@@ -29,24 +29,24 @@ namespace MohawkGame2D
         {
             //background color (sky)
             Window.ClearBackground(new Color(0, 0, 255 - 255 * Input.GetMouseY() / 400));
+           
+            //reverses the background for moon when space bar is down
             if(Input.IsKeyboardKeyDown(KeyboardKey.Space))
             Window.ClearBackground(new Color(0, 0, 255* Input.GetMouseY() / 400));
 
-
-
-
-
-            //sun that follows the mouse / turns into the moon when space bar down
+            //sun that follows the mouse 
             Draw.FillColor = Color.Yellow;
             Draw.LineSize = 4;
             Draw.LineColor = Color.Yellow;
+
+            //turns into the moon when space bar down
             if (Input.IsKeyboardKeyDown(KeyboardKey.Space))
                 Draw.FillColor = Color.White;
             if (Input.IsKeyboardKeyDown(KeyboardKey.Space))
                 Draw.LineColor = Color.White;
+            
+            //gets mouse postion for sun and moon
             Draw.Circle(Input.GetMouseX(), Input.GetMouseY(), 50);
-           
-
 
             //the front hill the sun sets behind
             Draw.FillColor = Color.Green;
