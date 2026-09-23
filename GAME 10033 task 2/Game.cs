@@ -30,16 +30,20 @@ namespace MohawkGame2D
             //background color (sky)
             Window.ClearBackground(new Color(0, 0, 255 - 255 * Input.GetMouseY() / 400));
 
-            
-        
+
+
 
 
             //sun that follows the mouse
             Draw.FillColor = Color.Yellow;
             Draw.LineSize = 4;
             Draw.LineColor = Color.Yellow;
+            if (Input.IsKeyboardKeyDown(KeyboardKey.Space))
+                Draw.FillColor = Color.White;
+            if (Input.IsKeyboardKeyDown(KeyboardKey.Space))
+                Draw.LineColor = Color.White;
             Draw.Circle(Input.GetMouseX(), Input.GetMouseY(), 50);
-
+           
 
 
             //the front hill the sun sets behind
