@@ -26,13 +26,15 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
-        //background color (sky)
+                 //background color (sky)
             Window.ClearBackground(Color.Blue);
 
 
             {
-
+                //sun that follows the mouse
                 Draw.FillColor = Color.Yellow;
+                Draw.LineSize = 4;
+                Draw.LineColor = Color.Yellow;
                 Draw.Circle(Input.GetMouseX(), Input.GetMouseY(), 50);
             }
 
