@@ -34,7 +34,7 @@ namespace MohawkGame2D
 
 
 
-            //sun that follows the mouse
+            //sun that follows the mouse / turns into the moon when space bar down
             Draw.FillColor = Color.Yellow;
             Draw.LineSize = 4;
             Draw.LineColor = Color.Yellow;
